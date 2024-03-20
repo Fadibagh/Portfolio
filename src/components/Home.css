@@ -1,0 +1,64 @@
+#home {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    padding: 50px;
+    padding-right: 10px;
+    padding-top: 115px;
+}
+
+#home > div:first-child {
+    margin-right: 75px;
+    padding-top: 45px;
+
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.image-section {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    padding: 30px;
+    padding-top: 20px;
+}
+
+.guy-coding {
+    width: 375px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #home {
+        flex-direction: column;
+        padding-top: 100px; /* Reduced padding for smaller screens */
+        text-align: center; /* Center text for a better look on smaller screens */
+    }
+
+    #home > div:first-child {
+        margin-right: 0; /* Remove the margin right for the first child on smaller screens */
+        margin-bottom: 20px; /* Add some space below the first child when stacked */
+    }
+
+    h1 {
+        font-size: 25px; /* Adjust font size for smaller screens */
+    }
+
+    h2 {
+        font-size: 35px; /* Adjust font size for smaller screens */
+    }
+
+    .guy-coding {
+        width: 300px; /* Adjust image width for smaller screens */
+    }
+}

@@ -1,0 +1,50 @@
+.header {
+    background-color: #2d3748; /* This is the bg-gray-800 color */
+    position: sticky; /* For md:sticky */
+    top: 0; /* Align to the top */
+    z-index: 10; /* For z-10 */
+  }
+  
+.container {
+    max-width: 100%; /* Tailwind's container class typically sets a max-width, adjust as needed */
+    padding: 0.5rem 1.25rem; /* p-5 */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; /* Items are aligned center vertically */
+    justify-content: space-between; /* Flexbox space-between style */
+}
+
+.title-text {
+    font-weight: 500; /* Corresponding to font-medium */
+    color: white; /* text-white */
+}
+
+.text-xl{
+    font-size: 1.40rem; /* text-xl */
+    margin-left: 0.75rem; /* ml-3 */
+    padding: 0.5rem 1rem;
+}
+
+
+.nav {
+    margin-right: auto; /* mr-auto */
+    margin-left: 1rem; /* ml-4 */
+    padding-top: 0.25rem; /* py-1 */
+    padding-left: 1rem; /* pl-4 */
+    border-left: 1px solid #4a5568; /* border-l and border-gray-700 */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .nav-item {
+    margin-right: 1.25rem; /* mr-5 */
+    color: white; /* text-base */
+    cursor: pointer;
+    font-size: 1.25rem;
+    padding: 0.25rem 1rem;
+  }
+  
+  .nav-item:hover {
+    color: white; /* hover:text-white */
+  }

@@ -1,0 +1,43 @@
+
+#about {
+    display: flex;
+    flex-direction: column; /* Keeps content in a vertical flow */
+    align-items: left; /* Centers the content for a polished look */
+    padding: 40px;
+  }
+  
+.book-icon {
+  width: 2.5rem;
+}
+
+  #about h2 {
+    font-size: 36px; /* A good size that stands out but isn't too overwhelming */
+    /* margin-bottom: 20px; */
+     /* Adds some space between the title and the paragraph */
+  }
+  
+  #about p {
+    max-width: 1250px; /* Keeps text lines at a comfortable reading length */
+    text-align: justify; /* Aligns text for a neat, uniform appearance */
+    font-size: 18px; /* A readable size that's not too small or too large */
+    line-height: 1.6; /* Enhances readability */
+    margin-top: 20px;
+  }
+
+
+  
+  /* Ensures the about section looks great even on smaller screens */
+  @media (max-width: 768px) {
+    #about {
+      padding: 20px;
+    }
+  
+    #about h2 {
+      font-size: 32px; /* Slightly smaller to fit smaller screens better */
+    }
+  
+    #about p {
+      max-width: 100%; /* Allows the paragraph to use up the available width */
+      padding: 0 10px; /* Adds a little padding so the text doesn't touch the screen edges */
+    }
+  }
