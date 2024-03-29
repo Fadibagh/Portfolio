@@ -3,9 +3,9 @@ import "./Home.css"
 const Home = () => {
   return (
   <section id="home">
-    <div>
-      <h1>Welcome To My Portfolio</h1>
-      <h2><b>My name is Fadi Baghdadi</b> 👋</h2>
+    <div className="intro">
+      <h1 className="Welcome">Welcome To My Portfolio</h1>
+      <h2 className="name"><b>My name is Fadi Baghdadi</b> 👋</h2>
     </div>
     <div className="Image-section">
       <img 

@@ -1,17 +1,46 @@
-.code-icon {
+/* Projects Section Container */
+#projects {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  /* Projects Wrapper */
+  .projects-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Code Icon */
+  .code-icon {
     width: 2.5rem;
-    margin-top: 40px;
-    margin-left: 40px;
-}
+  }
+  
+  /* Projects Title */
+  .title {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  /* Projects Description */
+  .description {
+    font-size: 2em;
+    margin-top: 10px;
+  }
+  
+  /* Media Query for Mobile Screens */
+  @media only screen and (max-width: 600px) {
 
-
-.title {
-    font-size: 36px;
-    color: white;
-}
-
-.descirption {
-    margin-left: 45px;
-}
-
-
+    #projects {
+      padding: 20px;
+    }
+  
+    .title {
+      font-size: 32px;
+    }
+  
+    .description {
+      font-size: 16px;
+    }
+  }
+  

@@ -1,64 +1,69 @@
+/* Home Section */
 #home {
+    padding: 2em 1em; /* 40px 20px */
+    padding-top: 6em;
     display: flex;
-    align-items: left;
-    justify-content: left;
-    text-align: left;
-    padding: 50px;
-    padding-right: 10px;
-    padding-top: 115px;
-}
-
-#home > div:first-child {
-    margin-right: 75px;
-    padding-top: 45px;
-
-}
-
-h1 {
-    font-size: 60px;
-}
-
-h2 {
-    font-size: 30px;
-}
-
-.image-section {
-    display: flex;
-    justify-content: right;
-    align-items: right;
-    padding: 30px;
-    padding-top: 20px;
-}
-
-.guy-coding {
-    width: 375px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Introduction */
+  .intro {
+    margin-right: 1em; /* 20px */
+  }
+  
+  /* Welcome Text */
+  .Welcome {
+    font-size: 3.6em; /* 28px */
+    font-weight: bold;
+  }
+  
+  /* Name Text */
+  .name {
+    font-size: 2.4em; /* 24px */
+  }
+  
+  /* Image Section */
+  .Image-section {
+    margin-left: 5em; /* 20px */
+  }
+  
+  /* Guy Coding Image */
+  .guy-coding {
+    max-width: 100%;
+    width: 425px;
+  }
+  
+  /* Media Query for Mobile Screens */
+  @media only screen and (max-width: 600px) {
     #home {
-        flex-direction: column;
-        padding-top: 100px; /* Reduced padding for smaller screens */
-        text-align: center; /* Center text for a better look on smaller screens */
+      flex-direction: column; /* Stack elements vertically on smaller screens */
+      align-items: center;
+      padding-top: 1em;
+    }
+    
+    .intro {
+      margin-right: 0; /* Remove margin on smaller screens */
+      margin-bottom: 1em; /* Add margin bottom for spacing on smaller screens */
     }
 
-    #home > div:first-child {
-        margin-right: 0; /* Remove the margin right for the first child on smaller screens */
-        margin-bottom: 20px; /* Add some space below the first child when stacked */
+    .Welcome {
+        font-size: 2em;
     }
 
-    h1 {
-        font-size: 25px; /* Adjust font size for smaller screens */
+    .name {
+        font-size: 1.2em;
     }
-
-    h2 {
-        font-size: 35px; /* Adjust font size for smaller screens */
+    
+    .Image-section {
+      margin-left: 0; /* Remove margin on smaller screens */
+      margin-top: 1em; /* Add margin top for spacing on smaller screens */
     }
 
     .guy-coding {
-        width: 300px; /* Adjust image width for smaller screens */
+        width: 250px;
     }
-}
+  }
+  
