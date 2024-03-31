@@ -9,7 +9,7 @@
   }
 
   .resume {
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-weight: bold;
     cursor: pointer;
     background-color: rgb(131, 15, 131);
@@ -57,7 +57,7 @@
     }
 
     .resume {
-      font-size: 0.8em;
+      font-size: 1em;
     }
     
     .intro {
