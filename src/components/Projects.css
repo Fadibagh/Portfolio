@@ -1,46 +1,92 @@
-/* Projects Section Container */
-#projects {
-    padding: 40px;
-    text-align: center;
-  }
-  
-  /* Projects Wrapper */
-  .projects-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  /* Code Icon */
-  .code-icon {
-    width: 2.5rem;
-  }
-  
-  /* Projects Title */
-  .title {
-    font-size: 2em;
-    font-weight: bold;
-  }
-  
-  /* Projects Description */
-  .description {
-    font-size: 2em;
-    margin-top: 10px;
-  }
-  
-  /* Media Query for Mobile Screens */
-  @media only screen and (max-width: 600px) {
+/* Container for the entire Projects section */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 75em; /* 1200px / 16 */
+  margin: 0 auto;
+  padding: 1.25em; /* 20px / 16 */
+}
 
-    #projects {
-      padding: 20px;
-    }
-  
-    .title {
-      font-size: 32px;
-    }
-  
-    .description {
-      font-size: 16px;
-    }
+/* Intro section with icon and main title */
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 0.625em; /* 10px / 16 */
+  margin-bottom: 1.25em; /* 20px / 16 */
+}
+
+.code-icon {
+  width: 3.125em; /* 50px / 16 */
+  height: 3.125em; /* 50px / 16 */
+}
+
+.title {
+  font-size: 2em;
+}
+
+/* Projects display area */
+.display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25em; /* 20px / 16 */
+}
+
+/* Individual project link container */
+.project {
+  text-decoration: none;
+  color: inherit;
+  border: 0.0625em solid #ccc; /* 1px / 16 */
+  overflow: hidden;
+  border-radius: 0.5em; /* 8px / 16 */
+  width: 18.75em; /* 300px / 16 */
+  transition: transform 0.2s;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+/* Section holding the image and info */
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-section {
+  width: 100%;
+  height: auto;
+}
+
+.info-section {
+  padding: 0.625em; /* 10px / 16 */
+}
+
+.title-of-project {
+  font-size: 1.5em;
+  margin: 0.625em 0; /* 10px / 16 */
+}
+
+.description {
+  font-size: 1em;
+}
+
+/* Responsive adjustments for phone screens */
+@media only screen and (max-width: 600px) { /* 600px / 16 */
+  .display {
+      gap: 0.5em; /* Adjust the gap between project cards */
   }
-  
+
+  .project {
+      width: 100%; /* Full width for smaller screens */
+  }
+
+  .info-section {
+      padding: 0.5em; /* Adjust padding for smaller screens */
+  }
+
+  .title-of-project, .description {
+      padding: 0 0.5em; /* Add padding to the left and right */
+  }
+}

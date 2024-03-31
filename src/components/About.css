@@ -19,7 +19,7 @@
   #about p {
     max-width: 1250px; /* Keeps text lines at a comfortable reading length */
     text-align: justify; /* Aligns text for a neat, uniform appearance */
-    font-size: 2em; /* A readable size that's not too small or too large */
+    font-size: 1.4em; /* A readable size that's not too small or too large */
     line-height: 1.6; /* Enhances readability */
     margin-top: 20px;
   }
@@ -33,7 +33,7 @@
     }
   
     #about h2 {
-      font-size: 32px; /* Slightly smaller to fit smaller screens better */
+      font-size: 1em; /* Slightly smaller to fit smaller screens better */
     }
   
     #about p {

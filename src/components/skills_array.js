@@ -1,6 +1,4 @@
 export const skills = [
-    //"JavaScript",
-    //"React",
     "Java",
     "CSS",
     "HTML",
@@ -13,5 +11,4 @@ export const skills = [
     "GitHub",
     "MS Office",
     "Chatgpt API"
-    // Add more skills as needed
   ];

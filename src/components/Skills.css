@@ -35,14 +35,14 @@
   
   /* Skill Icon */
   .skill-icon {
-    width: 3em; /* 32px */
+    width: 2.7em; /* 32px */
     height: 3em; /* 32px */
     margin-right: 0.5em; /* 10px */
   }
   
   /* Skill Text */
   .skill-text {
-    font-size: 1.75em; /* A readable size that's not too small or too large */
+    font-size: 1.2em; /* A readable size that's not too small or too large */
   }
   
   /* Media Query for Mobile Screens */
