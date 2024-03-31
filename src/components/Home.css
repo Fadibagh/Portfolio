@@ -1,6 +1,5 @@
-/* Home Section */
 #home {
-    padding: 2em 1em; /* 40px 20px */
+    padding: 2em 1em; 
     padding-top: 6em;
     display: flex;
     flex-direction: row;
@@ -8,45 +7,58 @@
     align-items: center;
     text-align: center;
   }
-  
-  /* Introduction */
-  .intro {
-    margin-right: 1em; /* 20px */
+
+  .resume {
+    font-size: 1.4em;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(131, 15, 131);
+    padding: 0.5em;
+    border-radius: 1em;
+    border: None;
+  }
+
+  .resume:hover {
+    background-color: rgba(255, 166, 0, 0.789);
+    transform: scale(1.05);
   }
   
-  /* Welcome Text */
+  .intro {
+    margin-right: 1em; 
+  }
+  
+
   .Welcome {
-    font-size: 3.6em; /* 28px */
+    font-size: 3.6em; 
     font-weight: bold;
   }
   
-  /* Name Text */
+
   .name {
-    font-size: 2.4em; /* 24px */
+    font-size: 2.4em; 
   }
   
-  /* Image Section */
+
   .Image-section {
-    margin-left: 5em; /* 20px */
+    margin-left: 5em;
   }
   
-  /* Guy Coding Image */
+
   .guy-coding {
     max-width: 100%;
     width: 425px;
   }
   
-  /* Media Query for Mobile Screens */
   @media only screen and (max-width: 600px) {
     #home {
-      flex-direction: column; /* Stack elements vertically on smaller screens */
+      flex-direction: column; 
       align-items: center;
       padding-top: 1em;
     }
     
     .intro {
-      margin-right: 0; /* Remove margin on smaller screens */
-      margin-bottom: 1em; /* Add margin bottom for spacing on smaller screens */
+      margin-right: 0; 
+      margin-bottom: 1em; 
     }
 
     .Welcome {
@@ -58,8 +70,8 @@
     }
     
     .Image-section {
-      margin-left: 0; /* Remove margin on smaller screens */
-      margin-top: 1em; /* Add margin top for spacing on smaller screens */
+      margin-left: 0; 
+      margin-top: 1em; 
     }
 
     .guy-coding {

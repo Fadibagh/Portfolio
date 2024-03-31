@@ -1,29 +1,19 @@
 /* Contact Section Container */
 #contact {
-    padding: 40px;
+    padding: 4em;
     text-align: center;
   }
-  
-  /* Contact Wrapper */
-  .contact-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  /* Contact Title */
+
   .title {
     font-size: 3em;
     font-weight: bold;
   }
   
-  /* Contact Information Item */
   .info-item {
     font-size: 18px;
     margin-top: 10px;
   }
   
-  /* Media Query for Mobile Screens */
   @media only screen and (max-width: 600px) {
     #contact {
       padding: 20px;
