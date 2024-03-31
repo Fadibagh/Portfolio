@@ -25,7 +25,6 @@ const Projects = () => {
                                 <img 
                                     alt="gallery"
                                     className="image-section"
-                                    // src={project.image}
                                     src={`${process.env.PUBLIC_URL}/${project.image}`}
                                 />
                                 <div className="info-section">

@@ -1,46 +1,43 @@
-/* Container for the entire Projects section */
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 75em; /* 1200px / 16 */
+  max-width: 75em; 
   margin: 0 auto;
-  padding: 1.25em; /* 20px / 16 */
+  padding: 1.25em; 
 }
 
-/* Intro section with icon and main title */
 .intro {
   display: flex;
   align-items: center;
-  gap: 0.625em; /* 10px / 16 */
-  margin-bottom: 1.25em; /* 20px / 16 */
+  gap: 0.625em; 
+  margin-bottom: 1.25em; 
 }
 
 .code-icon {
-  width: 3.125em; /* 50px / 16 */
-  height: 3.125em; /* 50px / 16 */
+  width: 3.125em; 
+  height: 3.125em;
 }
 
 .title {
   font-size: 2em;
 }
 
-/* Projects display area */
+
 .display {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.25em; /* 20px / 16 */
+  gap: 1.25em; 
 }
 
-/* Individual project link container */
 .project {
   text-decoration: none;
   color: inherit;
-  border: 0.0625em solid #ccc; /* 1px / 16 */
+  border: 0.0625em solid #ccc; 
   overflow: hidden;
-  border-radius: 0.5em; /* 8px / 16 */
-  width: 18.75em; /* 300px / 16 */
+  border-radius: 0.5em; 
+  width: 18.75em; 
   transition: transform 0.2s;
 }
 
@@ -48,7 +45,7 @@
   transform: scale(1.05);
 }
 
-/* Section holding the image and info */
+
 .section {
   display: flex;
   flex-direction: column;
@@ -60,33 +57,32 @@
 }
 
 .info-section {
-  padding: 0.625em; /* 10px / 16 */
+  padding: 0.625em; 
 }
 
 .title-of-project {
   font-size: 1.5em;
-  margin: 0.625em 0; /* 10px / 16 */
+  margin: 0.625em 0; 
 }
 
 .description {
   font-size: 1em;
 }
 
-/* Responsive adjustments for phone screens */
-@media only screen and (max-width: 600px) { /* 600px / 16 */
+@media only screen and (max-width: 600px) {
   .display {
-      gap: 0.5em; /* Adjust the gap between project cards */
+      gap: 0.5em; 
   }
 
   .project {
-      width: 100%; /* Full width for smaller screens */
+      width: 100%; 
   }
 
   .info-section {
-      padding: 0.5em; /* Adjust padding for smaller screens */
+      padding: 0.5em; 
   }
 
   .title-of-project, .description {
-      padding: 0 0.5em; /* Add padding to the left and right */
+      padding: 0 0.5em;
   }
 }
