@@ -6,22 +6,22 @@ const Projects = () => {
     return (
         <section id="projects">
            
-            <div className="container">
+            <div className="container-Projects">
 
-                <div className="intro">
-                    <CodeIcon className="code-icon" />
-                    <h2 className="title">Projects</h2>
+                <div className="intro-Projects">
+                    <CodeIcon className="code-icon-Projects" />
+                    <h2 className="title-Projects">Projects</h2>
                 </div>
 
-                <div className="display">
+                <div className="display-Projects">
 
                     {projects.map((project) => (
                         <a
                             href={project.link}
                             key={project.image}
-                            className="project">
+                            className="project-Projects">
 
-                            <div className="section">
+                            <div className="section-Projects">
                                 <img 
                                     alt="gallery"
                                     className="image-section"
