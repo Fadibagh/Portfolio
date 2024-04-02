@@ -38,7 +38,7 @@
   
     #about p {
       max-width: 100%; /* Allows the paragraph to use up the available width */
-      padding: 0 10px; /* Adds a little padding so the text doesn't touch the screen edges */
-      font-size: 1.3em;
+      padding-top: 10px;
+      font-size: 0.8em;
     }
   }

@@ -79,7 +79,7 @@
 
 @media only screen and (max-width: 600px) {
   .display-Projects {
-      gap: 0.5em; 
+      gap: 1em; 
   }
 
   .project-Projects {
