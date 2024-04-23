@@ -14,10 +14,10 @@ const Home = () => {
       </a>
     </div>
     <div className="Image-section">
-      <img 
-        className="guy-coding"
-        alt = "guy-coding"
-        src={`${process.env.PUBLIC_URL}/guycoding4.jpg`}
+      <img
+        className="personal-photo"
+        alt = "personal-photo"
+        src={`${process.env.PUBLIC_URL}/personalPhoto2.jpg`}
       />
     </div>
   </section>
