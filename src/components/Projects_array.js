@@ -10,7 +10,12 @@ export const projects = [
         desctiption: "Website that rates your code based on Readability, Style and Structure, Robustness, and Error Handling using chatgpt 3.5 turbo API.",
         image: "rate-my-code.gif",
         link: "https://rate-my-code-5113637cd44b.herokuapp.com",
+    },
+    {
+        title: "Basic Blockchain",
+        desctiption: "Basic Blockchain project. Users can simulate how blockchain works by sending and recieving transactions and viewing the blockchain.",
+        image: "basic-blockchain.gif",
+        link: "https://basic-blockchain-ceeb54919912.herokuapp.com",
     }
-
 ]
 
