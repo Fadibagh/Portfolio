@@ -10,5 +10,7 @@ export const skills = [
     "SQLite",
     "GitHub",
     "MS Office",
-    "Chatgpt API"
+    "Chatgpt API",
+    "Tailwind CSS",
+    "Heroku Web Deployment"
   ];
