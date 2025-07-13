@@ -1,32 +1,60 @@
-import "./Navbar.css"; // Make sure to import the new Navbar.css file
+import "./Navbar.css";
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
-    return (
-        <header className="header">
-            <div className="container">
-                <a className="title-text">
-                    <a href="#home">
-                        Home
-                    </a>   
-                </a>
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
-                <nav className="nav">
-                    <a href="#about" className="nav-item">
-                    About me
-                    </a> 
-                    <a href="#skills" className="nav-item">
-                        Skills
-                    </a>
-                    <a href="#projects" className="nav-item">
-                        Projects
-                    </a>
-                    <a href="#contact" className="nav-item">
-                        Contact Me
-                    </a>
-                </nav>
-            </div>
-        </header>
-    );
-}
- 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
+  return (
+    <header className={`header ${isScrolled ? "scrolled" : ""}`}>
+      <div className="container">
+        <a href="#home" className="title-text" onClick={closeMenu}>
+          Fadi Baghdadi
+        </a>
+
+        <nav className={`nav ${isMenuOpen ? "active" : ""}`}>
+          <a href="#about" className="nav-item" onClick={closeMenu}>
+            About me
+          </a>
+          <a href="#skills" className="nav-item" onClick={closeMenu}>
+            Skills
+          </a>
+          <a href="#projects" className="nav-item" onClick={closeMenu}>
+            Projects
+          </a>
+          <a href="#contact" className="nav-item" onClick={closeMenu}>
+            Contact Me
+          </a>
+        </nav>
+
+        <div
+          className={`mobile-menu-btn ${isMenuOpen ? "active" : ""}`}
+          onClick={toggleMenu}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+  );
+};
+
 export default Navbar;

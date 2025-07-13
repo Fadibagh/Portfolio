@@ -1,62 +1,167 @@
-/* Navbar Container */
 .header {
-    padding: 5px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000; /* Ensure it appears above other content */
-  }
-  
-  /* Navbar Inner Container */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(15, 15, 35, 0.8);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.header.scrolled {
+  background: rgba(15, 15, 35, 0.95);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.title-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffffff;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: all 0.3s ease;
+}
+
+.title-text:hover {
+  transform: scale(1.05);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-item {
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #ffffff;
+  position: relative;
+  transition: all 0.3s ease;
+  padding: 8px 0;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  transition: width 0.3s ease;
+}
+
+.nav-item:hover {
+  color: #667eea;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
+/* Mobile menu */
+.mobile-menu-btn {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.mobile-menu-btn span {
+  width: 25px;
+  height: 3px;
+  background: #ffffff;
+  margin: 3px 0;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+.mobile-menu-btn.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.mobile-menu-btn.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-btn.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
   .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 16px;
+    height: 60px;
   }
-  
-  /* Navbar Title Text */
+
   .title-text {
-    font-size: 1.5em;
-    font-weight: bold;
-    text-decoration: none;
-    color: inherit; /* Inherit the color from parent */
+    font-size: 1.25rem;
   }
-  
-  /* Navbar Navigation */
+
   .nav {
-    display: flex;
-    align-items: center;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: rgba(15, 15, 35, 0.95);
+    backdrop-filter: blur(20px);
+    flex-direction: column;
+    gap: 0;
+    padding: 20px 0;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
-  
-  /* Navbar Navigation Item */
+
+  .nav.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
   .nav-item {
-    margin-left: 20px;
-    font-size: 1.25em;
-    text-decoration: none;
-    color: inherit; /* Inherit the color from parent */
+    padding: 16px 20px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
-  
-  /* Navbar Navigation Item Hover Effect */
-  .nav-item:hover {
-    text-decoration: underline;
-  }
-  
-  /* Media Query for Mobile Screens */
-  @media only screen and (max-width: 600px) {
 
-    .container {
-      padding: 0 10px; /* Adjust padding for smaller screens */
-    }
-
-    .title-text {
-        font-size: 1em;
-    }
-    
-    .nav-item {
-      font-size: 0.9em; /* Adjust font size for smaller screens */
-    }
+  .nav-item:last-child {
+    border-bottom: none;
   }
-  
+
+  .mobile-menu-btn {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 12px;
+  }
+
+  .title-text {
+    font-size: 1.1rem;
+  }
+}
