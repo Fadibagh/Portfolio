@@ -85,7 +85,7 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="contact-form">
+          {/* <div className="contact-form">
             <form>
               <div className="form-group">
                 <label className="form-label">Name</label>
@@ -126,7 +126,7 @@ const Contact = () => {
                 📤 Send Message
               </button>
             </form>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

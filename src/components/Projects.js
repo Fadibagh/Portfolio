@@ -33,11 +33,12 @@ const Projects = () => {
                 <h3 className="project-title">{project.title}</h3>
                 <p className="project-description">{project.desctiption}</p>
 
-                {/* Example tech stack - you can add this to your projects array */}
                 <div className="project-tech">
-                  <span className="tech-tag">React</span>
-                  <span className="tech-tag">Node.js</span>
-                  <span className="tech-tag">MongoDB</span>
+                  {project.techStack.map((tech, techIndex) => (
+                    <span key={techIndex} className="tech-tag">
+                      {tech}
+                    </span>
+                  ))}
                 </div>
 
                 <div className="project-links">
